@@ -32,5 +32,6 @@ repositories {
 
 dependencies {
     compile 'com.facebook.react:react-native:+'
+    compile "com.filestack:filestack-java:0.8.2"
 }
   

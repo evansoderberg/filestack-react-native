@@ -8,8 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		342EB663215C0D5000FD5AB1 /* RNFileStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342EB662215C0D5000FD5AB1 /* RNFileStack.swift */; };
-		342EB6A0215C294700FD5AB1 /* Pods_RNFilestack.framework in Sources */ = {isa = PBXBuildFile; fileRef = DB3571EC00EE22F2501943B3 /* Pods_RNFilestack.framework */; };
-		4413F933C3D424CAADBF0C92 /* Pods_RNFilestack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB3571EC00EE22F2501943B3 /* Pods_RNFilestack.framework */; };
+		342EB92A215C402F00FD5AB1 /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 342EB927215C402F00FD5AB1 /* CryptoSwift.framework */; };
+		342EB92B215C402F00FD5AB1 /* FilestackSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 342EB928215C402F00FD5AB1 /* FilestackSDK.framework */; };
+		342EB92C215C402F00FD5AB1 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 342EB929215C402F00FD5AB1 /* Alamofire.framework */; };
+		342EB92D215C406B00FD5AB1 /* Alamofire.framework in Sources */ = {isa = PBXBuildFile; fileRef = 342EB929215C402F00FD5AB1 /* Alamofire.framework */; };
+		342EB92E215C406B00FD5AB1 /* CryptoSwift.framework in Sources */ = {isa = PBXBuildFile; fileRef = 342EB927215C402F00FD5AB1 /* CryptoSwift.framework */; };
+		342EB92F215C406B00FD5AB1 /* FilestackSDK.framework in Sources */ = {isa = PBXBuildFile; fileRef = 342EB928215C402F00FD5AB1 /* FilestackSDK.framework */; };
 		B3E7B58A1CC2AC0600A0062D /* RNFilestack.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* RNFilestack.m */; };
 /* End PBXBuildFile section */
 
@@ -31,8 +35,10 @@
 		2AE8AAB0F43D4ABB8DBE0A1E /* Pods-RNFilestack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNFilestack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RNFilestack/Pods-RNFilestack.debug.xcconfig"; sourceTree = "<group>"; };
 		342EB662215C0D5000FD5AB1 /* RNFileStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RNFileStack.swift; sourceTree = "<group>"; };
 		342EB900215C389D00FD5AB1 /* RNFilestack-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RNFilestack-Bridging-Header.h"; sourceTree = "<group>"; };
+		342EB927215C402F00FD5AB1 /* CryptoSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CryptoSwift.framework; path = Libraries/CryptoSwift.framework; sourceTree = "<group>"; };
+		342EB928215C402F00FD5AB1 /* FilestackSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FilestackSDK.framework; path = Libraries/FilestackSDK.framework; sourceTree = "<group>"; };
+		342EB929215C402F00FD5AB1 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Libraries/Alamofire.framework; sourceTree = "<group>"; };
 		B3E7B5891CC2AC0600A0062D /* RNFilestack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNFilestack.m; sourceTree = "<group>"; };
-		DB3571EC00EE22F2501943B3 /* Pods_RNFilestack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RNFilestack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,7 +46,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4413F933C3D424CAADBF0C92 /* Pods_RNFilestack.framework in Frameworks */,
+				342EB92A215C402F00FD5AB1 /* CryptoSwift.framework in Frameworks */,
+				342EB92B215C402F00FD5AB1 /* FilestackSDK.framework in Frameworks */,
+				342EB92C215C402F00FD5AB1 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,7 +58,9 @@
 		0CA1FF596001A78CB2AE65BC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DB3571EC00EE22F2501943B3 /* Pods_RNFilestack.framework */,
+				342EB929215C402F00FD5AB1 /* Alamofire.framework */,
+				342EB927215C402F00FD5AB1 /* CryptoSwift.framework */,
+				342EB928215C402F00FD5AB1 /* FilestackSDK.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -171,7 +181,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				342EB6A0215C294700FD5AB1 /* Pods_RNFilestack.framework in Sources */,
+				342EB92D215C406B00FD5AB1 /* Alamofire.framework in Sources */,
+				342EB92E215C406B00FD5AB1 /* CryptoSwift.framework in Sources */,
+				342EB92F215C406B00FD5AB1 /* FilestackSDK.framework in Sources */,
 				342EB663215C0D5000FD5AB1 /* RNFileStack.swift in Sources */,
 				B3E7B58A1CC2AC0600A0062D /* RNFilestack.m in Sources */,
 			);
@@ -266,6 +278,10 @@
 			baseConfigurationReference = 2AE8AAB0F43D4ABB8DBE0A1E /* Pods-RNFilestack.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Libraries",
+				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
@@ -289,6 +305,10 @@
 			baseConfigurationReference = 14A9B43C9F19E329CD7C46D7 /* Pods-RNFilestack.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Libraries",
+				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,

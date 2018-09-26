@@ -39,6 +39,62 @@
 ```javascript
 import RNFilestack from "filestack-react-native";
 
+const FILE_STACK_KEY = "YOUR-FILESTACK-KEY";
+
+class App extends React.Component {
+  componentWillUnmount() {
+    RNFileStack.emitter.removeAllListeners("onProgress");
+    RNFileStack.emitter.removeAllListeners("onFinish");
+  }
+
+  componentDidMount() {
+    const progressSubscription = RNFileStack.emitter.addListener(
+      "onProgress",
+      progress => {
+        this.onAttachmentUploadProgress(progress);
+      }
+    );
+    const finishSubscription = RNFileStack.emitter.addListener(
+      "onFinish",
+      data => {
+        this.onAttachmentUploadFinished(data);
+      }
+    );
+  }
+
+  onAttachmentUploadProgress = data => {
+    if (data.error) {
+      this.setState({
+        progress: null
+      });
+      console.warn(data.error);
+    }
+    this.setState({
+      progress: data.progress
+    });
+  };
+
+  onAttachmentUploadFinished = data => {
+    this.setState({
+      progress: null,
+      attachments: [
+        {
+          fileName: data.fileName,
+          fileRef: data.fileRef
+        }
+      ]
+    });
+  };
+
+  uploadFile = () => {
+    RNFileStack.upload(FILE_STACK_KEY, this.state.fileURI);
+  };
+
+  render() {
+    return <Button onPress={this.uploadFile}>Upload</Button>;
+  }
+}
+
 // TODO: What to do with the module?
 RNFilestack;
 ```

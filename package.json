@@ -14,15 +14,5 @@
   "license": "",
   "peerDependencies": {
     "react-native": "^0.41.2"
-  },
-  "dependencies": {
-    "react-native": "^0.57.1",
-    "react-native-pod": "^1.10.2"
-  },
-  "pods": {
-    "FilestackSDK": {
-      "pod": "FilestackSDK",
-      "version": "1.1"
-    }
   }
 }

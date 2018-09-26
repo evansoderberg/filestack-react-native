@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		342EB663215C0D5000FD5AB1 /* RNFileStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342EB662215C0D5000FD5AB1 /* RNFileStack.swift */; };
+		342EB6A0215C294700FD5AB1 /* Pods_RNFilestack.framework in Sources */ = {isa = PBXBuildFile; fileRef = DB3571EC00EE22F2501943B3 /* Pods_RNFilestack.framework */; };
 		4413F933C3D424CAADBF0C92 /* Pods_RNFilestack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB3571EC00EE22F2501943B3 /* Pods_RNFilestack.framework */; };
 		B3E7B58A1CC2AC0600A0062D /* RNFilestack.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* RNFilestack.m */; };
 /* End PBXBuildFile section */
@@ -160,6 +161,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				342EB6A0215C294700FD5AB1 /* Pods_RNFilestack.framework in Sources */,
 				342EB663215C0D5000FD5AB1 /* RNFileStack.swift in Sources */,
 				B3E7B58A1CC2AC0600A0062D /* RNFilestack.m in Sources */,
 			);

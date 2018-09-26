@@ -1,13 +1,27 @@
+// import RCTBridgeModule
+#if __has_include(<React/RCTBridgeModule.h>)
+#import <React/RCTBridgeModule.h>
+#elif __has_include(“RCTBridgeModule.h”)
+#import “RCTBridgeModule.h”
+#else
+#import “React/RCTBridgeModule.h” // Required when used as a Pod in a Swift project
+#endif
 
-#import "RNFilestack.h"
+// import RCTEventEmitter
+#if __has_include(<React/RCTEventEmitter.h>)
+#import <React/RCTEventEmitter.h>
+#elif __has_include(“RCTEventEmitter.h”)
+#import “RCTEventEmitter.h”
+#else
+#import “React/RCTEventEmitter.h” // Required when used as a Pod in a Swift project
+#endif
 
-@implementation RNFilestack
+// Export a native module
+// https://facebook.github.io/react-native/docs/native-modules-ios.html#exporting-swift
+@interface RCT_EXTERN_MODULE(RNFileStack, NSObject)
 
-- (dispatch_queue_t)methodQueue
-{
-    return dispatch_get_main_queue();
-}
-RCT_EXPORT_MODULE()
+// Export methods to a native module
+// https://facebook.github.io/react-native/docs/native-modules-ios.html#exporting-swift
+RCT_EXTERN_METHOD(upload:(NSString *)apiKey fileURI:(NSURL *)fileURI)
 
 @end
-  

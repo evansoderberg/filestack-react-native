@@ -1,6 +1,12 @@
+import { NativeEventEmitter, NativeModules } from 'react-native';
 
-import { NativeModules } from 'react-native';
+const { RNFileStack } = NativeModules;
 
-const { RNFilestack } = NativeModules;
+const RNFileStackEmitter = new NativeEventEmitter(RNFileStack);
 
-export default RNFilestack;
+export default {
+    upload(apiKey, uri) {
+        return RNFileStack.upload(apiKey, uri);
+    },
+    emitter: RNFileStackEmitter
+};

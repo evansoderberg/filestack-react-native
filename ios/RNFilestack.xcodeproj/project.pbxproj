@@ -11,9 +11,6 @@
 		342EB92A215C402F00FD5AB1 /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 342EB927215C402F00FD5AB1 /* CryptoSwift.framework */; };
 		342EB92B215C402F00FD5AB1 /* FilestackSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 342EB928215C402F00FD5AB1 /* FilestackSDK.framework */; };
 		342EB92C215C402F00FD5AB1 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 342EB929215C402F00FD5AB1 /* Alamofire.framework */; };
-		342EB92D215C406B00FD5AB1 /* Alamofire.framework in Sources */ = {isa = PBXBuildFile; fileRef = 342EB929215C402F00FD5AB1 /* Alamofire.framework */; };
-		342EB92E215C406B00FD5AB1 /* CryptoSwift.framework in Sources */ = {isa = PBXBuildFile; fileRef = 342EB927215C402F00FD5AB1 /* CryptoSwift.framework */; };
-		342EB92F215C406B00FD5AB1 /* FilestackSDK.framework in Sources */ = {isa = PBXBuildFile; fileRef = 342EB928215C402F00FD5AB1 /* FilestackSDK.framework */; };
 		B3E7B58A1CC2AC0600A0062D /* RNFilestack.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* RNFilestack.m */; };
 /* End PBXBuildFile section */
 
@@ -181,9 +178,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				342EB92D215C406B00FD5AB1 /* Alamofire.framework in Sources */,
-				342EB92E215C406B00FD5AB1 /* CryptoSwift.framework in Sources */,
-				342EB92F215C406B00FD5AB1 /* FilestackSDK.framework in Sources */,
 				342EB663215C0D5000FD5AB1 /* RNFileStack.swift in Sources */,
 				B3E7B58A1CC2AC0600A0062D /* RNFilestack.m in Sources */,
 			);

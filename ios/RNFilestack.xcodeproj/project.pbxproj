@@ -28,7 +28,6 @@
 		134814201AA4EA6300B7C361 /* libRNFilestack.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNFilestack.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		14A9B43C9F19E329CD7C46D7 /* Pods-RNFilestack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNFilestack.release.xcconfig"; path = "Pods/Target Support Files/Pods-RNFilestack/Pods-RNFilestack.release.xcconfig"; sourceTree = "<group>"; };
 		2AE8AAB0F43D4ABB8DBE0A1E /* Pods-RNFilestack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNFilestack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RNFilestack/Pods-RNFilestack.debug.xcconfig"; sourceTree = "<group>"; };
-		342EB661215C0D4F00FD5AB1 /* RNFilestack-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RNFilestack-Bridging-Header.h"; sourceTree = "<group>"; };
 		342EB662215C0D5000FD5AB1 /* RNFileStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RNFileStack.swift; sourceTree = "<group>"; };
 		B3E7B5891CC2AC0600A0062D /* RNFilestack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNFilestack.m; sourceTree = "<group>"; };
 		DB3571EC00EE22F2501943B3 /* Pods_RNFilestack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RNFilestack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,7 +67,6 @@
 				342EB662215C0D5000FD5AB1 /* RNFileStack.swift */,
 				B3E7B5891CC2AC0600A0062D /* RNFilestack.m */,
 				134814211AA4EA7D00B7C361 /* Products */,
-				342EB661215C0D4F00FD5AB1 /* RNFilestack-Bridging-Header.h */,
 				A36A5D94C3E43B6D708CAF69 /* Pods */,
 				0CA1FF596001A78CB2AE65BC /* Frameworks */,
 			);
@@ -142,15 +140,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-RNFilestack-checkManifestLockResult.txt",
 			);

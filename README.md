@@ -48,18 +48,12 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    const progressSubscription = RNFileStack.emitter.addListener(
-      "onProgress",
-      progress => {
-        this.onAttachmentUploadProgress(progress);
-      }
-    );
-    const finishSubscription = RNFileStack.emitter.addListener(
-      "onFinish",
-      data => {
-        this.onAttachmentUploadFinished(data);
-      }
-    );
+    RNFileStack.emitter.addListener("onProgress", progress => {
+      this.onAttachmentUploadProgress(progress);
+    });
+    RNFileStack.emitter.addListener("onFinish", data => {
+      this.onAttachmentUploadFinished(data);
+    });
   }
 
   onAttachmentUploadProgress = data => {

@@ -30,8 +30,28 @@
    project(':filestack-react-native').projectDir = new File(rootProject.projectDir, 	'../node_modules/filestack-react-native/android')
    ```
 3. Insert the following lines inside the dependencies block in `android/app/build.gradle`:
+
    ```
      compile project(':filestack-react-native')
+   ```
+
+4. `android/app/src/main/java/com/yourapp/MainApplication.java`
+
+   ```
+      public class MainApplication extends Application implements ReactApplication {
+
+      private static Context context;
+
+      public static Context getAppContext() {
+        return MainApplication.context;
+      }
+
+      @Override
+      public void onCreate() {
+        super.onCreate();
+        MainApplication.context = getApplicationContext();
+      }
+    }
    ```
 
 ## Usage

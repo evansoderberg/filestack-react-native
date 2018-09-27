@@ -28,8 +28,6 @@
 
 /* Begin PBXFileReference section */
 		134814201AA4EA6300B7C361 /* libRNFilestack.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNFilestack.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		14A9B43C9F19E329CD7C46D7 /* Pods-RNFilestack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNFilestack.release.xcconfig"; path = "Pods/Target Support Files/Pods-RNFilestack/Pods-RNFilestack.release.xcconfig"; sourceTree = "<group>"; };
-		2AE8AAB0F43D4ABB8DBE0A1E /* Pods-RNFilestack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNFilestack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RNFilestack/Pods-RNFilestack.debug.xcconfig"; sourceTree = "<group>"; };
 		342EB662215C0D5000FD5AB1 /* RNFileStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RNFileStack.swift; sourceTree = "<group>"; };
 		342EB900215C389D00FD5AB1 /* RNFilestack-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RNFilestack-Bridging-Header.h"; sourceTree = "<group>"; };
 		342EB927215C402F00FD5AB1 /* CryptoSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CryptoSwift.framework; path = Libraries/CryptoSwift.framework; sourceTree = "<group>"; };
@@ -85,18 +83,8 @@
 				342EB662215C0D5000FD5AB1 /* RNFileStack.swift */,
 				B3E7B5891CC2AC0600A0062D /* RNFilestack.m */,
 				134814211AA4EA7D00B7C361 /* Products */,
-				A36A5D94C3E43B6D708CAF69 /* Pods */,
 				0CA1FF596001A78CB2AE65BC /* Frameworks */,
 			);
-			sourceTree = "<group>";
-		};
-		A36A5D94C3E43B6D708CAF69 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				2AE8AAB0F43D4ABB8DBE0A1E /* Pods-RNFilestack.debug.xcconfig */,
-				14A9B43C9F19E329CD7C46D7 /* Pods-RNFilestack.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,7 +257,6 @@
 		};
 		58B511F01A9E6C8500147676 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2AE8AAB0F43D4ABB8DBE0A1E /* Pods-RNFilestack.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -297,7 +284,6 @@
 		};
 		58B511F11A9E6C8500147676 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 14A9B43C9F19E329CD7C46D7 /* Pods-RNFilestack.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (

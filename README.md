@@ -4,9 +4,17 @@
 
 `$ npm install filestack-react-native --save`
 
-### Mostly automatic installation
+### Mostly automatic installation iOS
 
 `$ react-native link filestack-react-native`
+
+1. Add FilestackSDK and its dependencies (CryptoSwift & Almofire) frameworks to embedded binaries. They are located at node_modules/filestack-react-native/ios/Libraries/.
+
+### iOS
+
+`$ react-native link filestack-react-native`
+
+1.
 
 ### Manual installation
 

@@ -1,6 +1,6 @@
 //  Created by react-native-create-bridge
 
-package com.myagi.rnfilestack;
+package com.evansoderberg.rnfilestack;
 
 import android.support.annotation.Nullable;
 import android.content.Context;
@@ -19,7 +19,6 @@ import com.filestack.Client;
 import com.filestack.Config;
 import com.filestack.FileLink;
 import com.filestack.Progress;
-import com.myagi.MainApplication;
 
 import io.reactivex.functions.Consumer;
 import io.reactivex.Flowable;
@@ -57,7 +56,8 @@ public class RNFileStackModule extends ReactContextBaseJavaModule {
 
     private String getRealPathFromURI(Uri contentUri) {
         String[] proj = { MediaStore.Images.Media.DATA };
-        Context mContext = MainApplication.getAppContext();
+        // Context mContext = MainApplication.getAppContext();
+        Context mContext = reactContext.getApplicationContext();
         CursorLoader loader = new CursorLoader(mContext, contentUri, proj, null, null, null);
         Cursor cursor = loader.loadInBackground();
         int column_index = cursor.getColumnIndexOrThrow(MediaStore.Images.Media.DATA);
